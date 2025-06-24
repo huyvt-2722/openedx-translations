@@ -6784,7 +6784,7 @@ msgstr ""
 "%(site_name)s ."
 
 #: lms/templates/logout.html:5
-msgid "Signed Out"
+msgid "Logout"
 msgstr "Đã đăng xuất"
 
 #: lms/templates/logout.html:9 lms/templates/logout.html:36
@@ -19563,7 +19563,7 @@ msgstr "Xem tất cả các khóa học"
 #: lms/templates/header/user_dropdown.html:44
 #: lms/templates/user_dropdown.html:30 lms/templates/user_dropdown.html:38
 msgid "Dashboard"
-msgstr "bảng điều khiển"
+msgstr "Bảng điều khiển"
 
 #: lms/templates/dashboard.html:230
 msgid "results successfully populated,"
