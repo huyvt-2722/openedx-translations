@@ -24,17 +24,17 @@
 # 
 # Translators:
 # Brian Smith, 2024
-# Ali Işıngör <ali@artistanbul.io>, 2025
 # edx_transifex_bot <i18n-working-group+edx-transifex-bot@edx.org>, 2025
+# Ali Işıngör <ali@artistanbul.io>, 2025
 # 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2025-06-17 00:36+0000\n"
+"POT-Creation-Date: 2025-06-20 00:36+0000\n"
 "PO-Revision-Date: 2023-11-20 11:35+0000\n"
-"Last-Translator: edx_transifex_bot <i18n-working-group+edx-transifex-bot@edx.org>, 2025\n"
+"Last-Translator: Ali Işıngör <ali@artistanbul.io>, 2025\n"
 "Language-Team: Turkish (Turkey) (https://app.transifex.com/open-edx/teams/6205/tr_TR/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -66,11 +66,11 @@ msgstr "Tüm ders ana hatlarının yenilemeleri başarıyla talep edildi."
 msgid "Regenerate *all* course outlines"
 msgstr "*Tüm* ders ana hatlarını yeniden oluştur"
 
-#: cms/djangoapps/contentstore/asset_storage_handlers.py:548
+#: cms/djangoapps/contentstore/asset_storage_handlers.py:551
 msgid "Upload completed"
 msgstr "Yükleme tamamlandı"
 
-#: cms/djangoapps/contentstore/asset_storage_handlers.py:592
+#: cms/djangoapps/contentstore/asset_storage_handlers.py:595
 #, python-brace-format
 msgid ""
 "File {filename} exceeds maximum size of {maximum_size_in_megabytes} MB."
@@ -1172,6 +1172,14 @@ msgstr "İçerik sahnelemedi"
 #: cms/djangoapps/import_from_modulestore/data.py:20
 msgid "Content is staged and ready for import"
 msgstr "İçerik hazırlandı ve içe aktarmaya hazır"
+
+#: cms/djangoapps/import_from_modulestore/data.py:21
+msgid "Importing staged content"
+msgstr "Aşamalı içerik içe aktarılıyor"
+
+#: cms/djangoapps/import_from_modulestore/data.py:22
+msgid "Failed to import staged content"
+msgstr "Aşamalı içerik içe aktarılamadı"
 
 #: cms/djangoapps/import_from_modulestore/data.py:23
 msgid "Successfully imported content"
@@ -3635,6 +3643,7 @@ msgstr ""
 #. Translators:  'All rights reserved' is a legal term used in copyrighting to
 #. protect published content
 #: lms/djangoapps/certificates/views/webview.py:176
+#: lms/djangoapps/course_goals/templates/course_goals/edx_ace/goalreminder/email/footer.html:176
 #: openedx/core/djangoapps/ace_common/templates/ace_common/edx_ace/common/base_body.html:231
 #: openedx/core/djangoapps/notifications/templates/notifications/digest_footer.html:50
 #: openedx/core/djangoapps/schedules/templates/schedules/edx_ace/courseupdate/email/footer.html:176
@@ -3886,46 +3895,47 @@ msgstr "Zamanlanmış Sınav"
 msgid "Exam"
 msgstr "Sınav"
 
-#: lms/djangoapps/course_goals/templates/course_goals/edx_ace/goalreminder/email/body.html:45
-msgid ""
-"\n"
-"                            There’s still time to reach your goal\n"
-"                        "
-msgstr ""
-"\n"
-"                            Hedefine ulaşmak için hâlâ zamanın var"
+#: lms/djangoapps/course_goals/templates/course_goals/edx_ace/goalreminder/email/body.html:33
+msgid "There’s still time to reach your goal"
+msgstr "Hedefinize ulaşmak için hala zamanınız var"
 
-#: lms/djangoapps/course_goals/templates/course_goals/edx_ace/goalreminder/email/body.html:80
+#: lms/djangoapps/course_goals/templates/course_goals/edx_ace/goalreminder/email/body.html:41
+#, python-format
 msgid ""
 "\n"
-"                                Jump back in\n"
-"                            "
+"            You’re almost there, %(user_name)s!\n"
+"        "
 msgstr ""
 "\n"
-"                            Geri atla\n"
-"                        "
+"            Neredeyse başardın, %(user_name)s!\n"
+"        "
 
-#: lms/djangoapps/course_goals/templates/course_goals/edx_ace/goalreminder/email/body.html:90
+#: lms/djangoapps/course_goals/templates/course_goals/edx_ace/goalreminder/email/body.html:79
 msgid ""
 "\n"
-"                            Remember, you can always change your learning goal. The best goal is one that you can stick to.\n"
-"                        "
+"                        Jump back in\n"
+"                    "
 msgstr ""
 "\n"
-"                            Unutmayın, öğrenme hedefinizi her zaman değiştirebilirsiniz. En iyi hedef, sadık kalabileceğiniz hedeftir.\n"
+"                         Geri atlayın\n"
 "                    "
 
-#: lms/djangoapps/course_goals/templates/course_goals/edx_ace/goalreminder/email/body.html:109
-msgid ""
-"\n"
-"                            Adjust my goal\n"
-"                        "
-msgstr ""
-"\n"
-"                            Hedefimi değiştir\n"
-"                        "
+#: lms/djangoapps/course_goals/templates/course_goals/edx_ace/goalreminder/email/body.html:98
+#: lms/djangoapps/course_goals/templates/course_goals/edx_ace/goalreminder/email/body.html:117
+msgid "Remember: the best goal is one that you can stick to. "
+msgstr "Unutmayın: En iyi hedef, sadık kalabileceğiniz hedeftir. "
 
-#: lms/djangoapps/course_goals/templates/course_goals/edx_ace/goalreminder/email/body.html:129
+#: lms/djangoapps/course_goals/templates/course_goals/edx_ace/goalreminder/email/body.html:99
+#: lms/djangoapps/course_goals/templates/course_goals/edx_ace/goalreminder/email/body.html:118
+msgid "You can always"
+msgstr "Her zaman yapabilirsin"
+
+#: lms/djangoapps/course_goals/templates/course_goals/edx_ace/goalreminder/email/body.html:101
+#: lms/djangoapps/course_goals/templates/course_goals/edx_ace/goalreminder/email/body.html:120
+msgid "if you need to."
+msgstr "Eğer ihtiyacın varsa."
+
+#: lms/djangoapps/course_goals/templates/course_goals/edx_ace/goalreminder/email/body.html:144
 msgid ""
 "\n"
 "                            Unsubscribe from goal reminder emails for this course\n"
@@ -3934,6 +3944,16 @@ msgstr ""
 "\n"
 "                            Bu dersin hatırlatma e-postaları aboneliğinden çık\n"
 "                    "
+
+#: lms/djangoapps/course_goals/templates/course_goals/edx_ace/goalreminder/email/body.html:158
+msgid ""
+"\n"
+"                                Unsubscribe from goal reminder emails for this course\n"
+"                                "
+msgstr ""
+"\n"
+"                                Bu dersin hedef hatırlatma e-postaları aboneliğinden çık\n"
+"                                "
 
 #: lms/djangoapps/course_goals/templates/course_goals/edx_ace/goalreminder/email/body.txt:2
 msgid "You're almost there!"
@@ -3961,6 +3981,75 @@ msgid ""
 msgstr ""
 "Unutmayın, öğrenme hedefinizi her zaman değiştirebilirsiniz. En iyi hedef, "
 "sadık kalabileceğiniz hedeftir."
+
+#: lms/djangoapps/course_goals/templates/course_goals/edx_ace/goalreminder/email/footer.html:47
+#: lms/djangoapps/course_goals/templates/course_goals/edx_ace/goalreminder/email/head.html:24
+#: openedx/core/djangoapps/ace_common/templates/ace_common/edx_ace/common/base_body.html:82
+#: openedx/core/djangoapps/schedules/templates/schedules/edx_ace/courseupdate/email/footer.html:47
+#: openedx/core/djangoapps/schedules/templates/schedules/edx_ace/courseupdate/email/head.html:24
+#: themes/red-theme/lms/templates/ace_common/edx_ace/common/base_body.html:67
+#, python-format
+msgid "Go to %(platform_name)s Home Page"
+msgstr "%(platform_name)s Ana Sayfasına Git"
+
+#: lms/djangoapps/course_goals/templates/course_goals/edx_ace/goalreminder/email/footer.html:63
+#: lms/djangoapps/course_goals/templates/course_goals/edx_ace/goalreminder/email/footer.html:71
+#: openedx/core/djangoapps/ace_common/templates/ace_common/edx_ace/common/base_body.html:172
+#: openedx/core/djangoapps/schedules/templates/schedules/edx_ace/courseupdate/email/footer.html:63
+#: openedx/core/djangoapps/schedules/templates/schedules/edx_ace/courseupdate/email/footer.html:71
+#: themes/red-theme/lms/templates/ace_common/edx_ace/common/base_body.html:116
+#, python-format
+msgid "%(platform_name)s on Facebook"
+msgstr "Facebook'ta %(platform_name)s"
+
+#: lms/djangoapps/course_goals/templates/course_goals/edx_ace/goalreminder/email/footer.html:79
+#: openedx/core/djangoapps/ace_common/templates/ace_common/edx_ace/common/base_body.html:156
+#: openedx/core/djangoapps/schedules/templates/schedules/edx_ace/courseupdate/email/footer.html:79
+#: themes/red-theme/lms/templates/ace_common/edx_ace/common/base_body.html:100
+#, python-format
+msgid "%(platform_name)s on LinkedIn"
+msgstr "LinkedIn'de %(platform_name)s"
+
+#: lms/djangoapps/course_goals/templates/course_goals/edx_ace/goalreminder/email/footer.html:87
+#: openedx/core/djangoapps/ace_common/templates/ace_common/edx_ace/common/base_body.html:164
+#: openedx/core/djangoapps/schedules/templates/schedules/edx_ace/courseupdate/email/footer.html:87
+#: themes/red-theme/lms/templates/ace_common/edx_ace/common/base_body.html:108
+#, python-format
+msgid "%(platform_name)s on Twitter"
+msgstr "Twitter'da %(platform_name)s"
+
+#: lms/djangoapps/course_goals/templates/course_goals/edx_ace/goalreminder/email/footer.html:95
+#: openedx/core/djangoapps/ace_common/templates/ace_common/edx_ace/common/base_body.html:188
+#: openedx/core/djangoapps/schedules/templates/schedules/edx_ace/courseupdate/email/footer.html:95
+#: themes/red-theme/lms/templates/ace_common/edx_ace/common/base_body.html:132
+#, python-format
+msgid "%(platform_name)s on Reddit"
+msgstr "Reddit'de %(platform_name)s"
+
+#: lms/djangoapps/course_goals/templates/course_goals/edx_ace/goalreminder/email/footer.html:137
+#: openedx/core/djangoapps/ace_common/templates/ace_common/edx_ace/common/base_body.html:202
+#: openedx/core/djangoapps/schedules/templates/schedules/edx_ace/courseupdate/email/footer.html:137
+#: themes/red-theme/lms/templates/ace_common/edx_ace/common/base_body.html:146
+msgid "Download the iOS app on the Apple Store"
+msgstr "Apple Mağazası'ndan iOS uygulamasını indir"
+
+#: lms/djangoapps/course_goals/templates/course_goals/edx_ace/goalreminder/email/footer.html:147
+#: openedx/core/djangoapps/ace_common/templates/ace_common/edx_ace/common/base_body.html:209
+#: openedx/core/djangoapps/schedules/templates/schedules/edx_ace/courseupdate/email/footer.html:147
+#: themes/red-theme/lms/templates/ace_common/edx_ace/common/base_body.html:153
+msgid "Download the Android app on the Google Play Store"
+msgstr "Google Play Mağazası'ndan Android uygulamasını indir"
+
+#: lms/djangoapps/course_goals/templates/course_goals/edx_ace/goalreminder/email/footer.html:174
+#: openedx/core/djangoapps/schedules/templates/schedules/edx_ace/courseupdate/email/footer.html:174
+msgid "edX is the trusted platform for education and learning"
+msgstr "edX, eğitim ve öğrenme için güvenilir bir platformdur"
+
+#: lms/djangoapps/course_goals/templates/course_goals/edx_ace/goalreminder/email/footer.html:180
+#: openedx/core/djangoapps/ace_common/templates/ace_common/edx_ace/common/base_body.html:240
+#: openedx/core/djangoapps/schedules/templates/schedules/edx_ace/courseupdate/email/footer.html:180
+msgid "Unsubscribe from these emails."
+msgstr "Bu e-postaların aboneliğinden ayrıl."
 
 #: lms/djangoapps/course_goals/templates/course_goals/edx_ace/goalreminder/email/subject.txt:3
 #, python-format
@@ -7785,14 +7874,6 @@ msgstr "LMS Yönetimi"
 msgid "ACE Common"
 msgstr "ACE Common"
 
-#: openedx/core/djangoapps/ace_common/templates/ace_common/edx_ace/common/base_body.html:82
-#: openedx/core/djangoapps/schedules/templates/schedules/edx_ace/courseupdate/email/footer.html:47
-#: openedx/core/djangoapps/schedules/templates/schedules/edx_ace/courseupdate/email/head.html:24
-#: themes/red-theme/lms/templates/ace_common/edx_ace/common/base_body.html:67
-#, python-format
-msgid "Go to %(platform_name)s Home Page"
-msgstr "%(platform_name)s Ana Sayfasına Git"
-
 #: openedx/core/djangoapps/ace_common/templates/ace_common/edx_ace/common/base_body.html:97
 #: cms/templates/index.html:335 cms/templates/index.html:337
 #: lms/templates/courseware/courses.html:33
@@ -7808,61 +7889,15 @@ msgstr "Dersler"
 msgid "My Account"
 msgstr "Hesabım"
 
-#: openedx/core/djangoapps/ace_common/templates/ace_common/edx_ace/common/base_body.html:156
-#: openedx/core/djangoapps/schedules/templates/schedules/edx_ace/courseupdate/email/footer.html:79
-#: themes/red-theme/lms/templates/ace_common/edx_ace/common/base_body.html:100
-#, python-format
-msgid "%(platform_name)s on LinkedIn"
-msgstr "LinkedIn'de %(platform_name)s"
-
-#: openedx/core/djangoapps/ace_common/templates/ace_common/edx_ace/common/base_body.html:164
-#: openedx/core/djangoapps/schedules/templates/schedules/edx_ace/courseupdate/email/footer.html:87
-#: themes/red-theme/lms/templates/ace_common/edx_ace/common/base_body.html:108
-#, python-format
-msgid "%(platform_name)s on Twitter"
-msgstr "Twitter'da %(platform_name)s"
-
-#: openedx/core/djangoapps/ace_common/templates/ace_common/edx_ace/common/base_body.html:172
-#: openedx/core/djangoapps/schedules/templates/schedules/edx_ace/courseupdate/email/footer.html:63
-#: openedx/core/djangoapps/schedules/templates/schedules/edx_ace/courseupdate/email/footer.html:71
-#: themes/red-theme/lms/templates/ace_common/edx_ace/common/base_body.html:116
-#, python-format
-msgid "%(platform_name)s on Facebook"
-msgstr "Facebook'ta %(platform_name)s"
-
 #: openedx/core/djangoapps/ace_common/templates/ace_common/edx_ace/common/base_body.html:180
 #: themes/red-theme/lms/templates/ace_common/edx_ace/common/base_body.html:124
 #, python-format
 msgid "%(platform_name)s on Google Plus"
 msgstr "Google Plus'da %(platform_name)s"
 
-#: openedx/core/djangoapps/ace_common/templates/ace_common/edx_ace/common/base_body.html:188
-#: openedx/core/djangoapps/schedules/templates/schedules/edx_ace/courseupdate/email/footer.html:95
-#: themes/red-theme/lms/templates/ace_common/edx_ace/common/base_body.html:132
-#, python-format
-msgid "%(platform_name)s on Reddit"
-msgstr "Reddit'de %(platform_name)s"
-
-#: openedx/core/djangoapps/ace_common/templates/ace_common/edx_ace/common/base_body.html:202
-#: openedx/core/djangoapps/schedules/templates/schedules/edx_ace/courseupdate/email/footer.html:137
-#: themes/red-theme/lms/templates/ace_common/edx_ace/common/base_body.html:146
-msgid "Download the iOS app on the Apple Store"
-msgstr "Apple Mağazası'ndan iOS uygulamasını indir"
-
-#: openedx/core/djangoapps/ace_common/templates/ace_common/edx_ace/common/base_body.html:209
-#: openedx/core/djangoapps/schedules/templates/schedules/edx_ace/courseupdate/email/footer.html:147
-#: themes/red-theme/lms/templates/ace_common/edx_ace/common/base_body.html:153
-msgid "Download the Android app on the Google Play Store"
-msgstr "Google Play Mağazası'ndan Android uygulamasını indir"
-
 #: openedx/core/djangoapps/ace_common/templates/ace_common/edx_ace/common/base_body.html:233
 msgid "Our mailing address is:"
 msgstr "E-posta adresimiz şöyle: "
-
-#: openedx/core/djangoapps/ace_common/templates/ace_common/edx_ace/common/base_body.html:240
-#: openedx/core/djangoapps/schedules/templates/schedules/edx_ace/courseupdate/email/footer.html:180
-msgid "Unsubscribe from these emails."
-msgstr "Bu e-postaların aboneliğinden ayrıl."
 
 #: openedx/core/djangoapps/ace_common/templates/ace_common/edx_ace/common/base_head.html:7
 #, python-format
@@ -8952,6 +8987,23 @@ msgstr "Ders ekibinden yeni duyurular ve güncellemeler için bildirimler."
 msgid "Notifications for submission grading."
 msgstr "Gönderim notlandırma bildirimleri."
 
+#: openedx/core/djangoapps/notifications/email/tasks.py:168
+msgid "New Course Update"
+msgstr "Yeni Ders Güncellemesi"
+
+#: openedx/core/djangoapps/notifications/email/tasks.py:176
+msgid ""
+"You are receiving this email because you are enrolled in the edX course "
+msgstr "Bu e-postayı edX dersine kayıtlı olduğunuz için alıyorsunuz "
+
+#: openedx/core/djangoapps/notifications/email/utils.py:141
+msgid "Total Notifications"
+msgstr "Toplam Bildirimler"
+
+#: openedx/core/djangoapps/notifications/email/utils.py:217
+msgid "Today"
+msgstr "Bugün"
+
 #: openedx/core/djangoapps/notifications/email/utils.py:458
 #: openedx/features/course_experience/plugins.py:34
 #: cms/templates/widgets/header.html:115 cms/templates/widgets/header.html:120
@@ -8960,6 +9012,22 @@ msgstr "Gönderim notlandırma bildirimleri."
 #: openedx/features/course_experience/templates/course_experience/course-updates-fragment.html:25
 msgid "Updates"
 msgstr "Güncellemeler"
+
+#: openedx/core/djangoapps/notifications/email/utils.py:459
+msgid "Grades"
+msgstr "Notlar"
+
+#: openedx/core/djangoapps/notifications/email/utils.py:480
+msgid "discussion"
+msgstr "tartışma"
+
+#: openedx/core/djangoapps/notifications/email/utils.py:481
+msgid "update"
+msgstr "güncelleme"
+
+#: openedx/core/djangoapps/notifications/email/utils.py:482
+msgid "assessment"
+msgstr "değerlendirme"
 
 #: openedx/core/djangoapps/notifications/email_notifications.py:16
 msgid "Daily"
@@ -8979,12 +9047,33 @@ msgstr "Hemen"
 msgid "Never"
 msgstr "Asla"
 
+#: openedx/core/djangoapps/notifications/templates/notifications/digest_content.html:15
+msgid "View all"
+msgstr "Tümünü görüntüle"
+
 #: openedx/core/djangoapps/notifications/templates/notifications/digest_content.html:50
 #: openedx/core/djangoapps/notifications/templates/notifications/immediate_email_content.html:27
 #: wiki/templates/wiki/includes/article_menu.html:49
 #: lms/templates/wiki/includes/article_menu.html:13
 msgid "View"
 msgstr "Görüntüle"
+
+#: openedx/core/djangoapps/notifications/templates/notifications/digest_content.html:63
+msgid "more"
+msgstr "daha fazlası"
+
+#: openedx/core/djangoapps/notifications/templates/notifications/digest_footer.html:38
+msgid ""
+"You are receiving this email because you have subscribed to email digest"
+msgstr "Bu e-postayı, e-posta özetine abone olduğunuz için alıyorsunuz"
+
+#: openedx/core/djangoapps/notifications/templates/notifications/digest_footer.html:43
+msgid "Notification Settings"
+msgstr "Bildirim Ayarları"
+
+#: openedx/core/djangoapps/notifications/templates/notifications/digest_footer.html:46
+msgid "Unsubscribe from email digest for learning activity"
+msgstr "Öğrenme etkinliği için e-posta özeti aboneliğini iptal et"
 
 #: openedx/core/djangoapps/notifications/templates/notifications/digest_header.html:12
 #: openedx/core/djangoapps/notifications/templates/notifications/immediate_email_content.html:8
@@ -8994,6 +9083,24 @@ msgstr "Görüntüle"
 #: lms/templates/bulk_email/unsubscribe_success.html:18
 msgid "Unsubscribe"
 msgstr "Abonelik iptali"
+
+#: openedx/core/djangoapps/notifications/templates/notifications/digest_header.html:25
+msgid "Weekly Notifications Digest"
+msgstr "Haftalık Bildirim Özeti"
+
+#: openedx/core/djangoapps/notifications/templates/notifications/digest_header.html:27
+msgid "Daily Notifications Digest"
+msgstr "Günlük Bildirim Özeti"
+
+#: openedx/core/djangoapps/notifications/templates/notifications/edx_ace/email_digest/email/body.txt:4
+#: openedx/core/djangoapps/notifications/templates/notifications/edx_ace/email_digest/email/subject.txt:4
+msgid "Weekly Notifications Digest for the Week of"
+msgstr "Haftalık Bildirim Özeti - Hafta"
+
+#: openedx/core/djangoapps/notifications/templates/notifications/edx_ace/email_digest/email/body.txt:6
+#: openedx/core/djangoapps/notifications/templates/notifications/edx_ace/email_digest/email/subject.txt:6
+msgid "Daily Notifications Digest for"
+msgstr "Günlük Bildirim Özeti - Gün"
 
 #: openedx/core/djangoapps/notifications/templates/notifications/email_digest_preference_update.html:5
 msgid "Email Digest Preferences Updated"
@@ -9210,6 +9317,49 @@ msgstr "%(filter_title)s İle"
 #, python-format
 msgid "Welcome to week %(week_num)s of %(course_name)s!"
 msgstr "%(course_name)s dersinin %(week_num)s. haftasına hoş geldiniz!"
+
+#: openedx/core/djangoapps/schedules/templates/schedules/edx_ace/courseupdate/email/body.html:46
+msgid "Welcome to edX. It’s time for your next career move"
+msgstr "edX'e hoş geldiniz. Bir sonraki kariyer hamlenizin zamanı geldi"
+
+#: openedx/core/djangoapps/schedules/templates/schedules/edx_ace/courseupdate/email/body.html:53
+msgid "We hope you’re enjoying Introduction to Data Science with Python!"
+msgstr ""
+"Python ile Veri Bilimine Giriş dersinin tadını çıkardığınızı umuyoruz!"
+
+#: openedx/core/djangoapps/schedules/templates/schedules/edx_ace/courseupdate/email/body.html:56
+msgid "We want to let you know what you can look forward to in week two: "
+msgstr "İkinci haftada sizi neler beklediğini size bildirmek istiyoruz: "
+
+#: openedx/core/djangoapps/schedules/templates/schedules/edx_ace/courseupdate/email/body.html:61
+msgid "Learn kNN regression"
+msgstr "kNN regresyonunu öğrenin"
+
+#: openedx/core/djangoapps/schedules/templates/schedules/edx_ace/courseupdate/email/body.html:66
+msgid "Learn linear regression"
+msgstr "Doğrusal regresyonu öğrenin"
+
+#: openedx/core/djangoapps/schedules/templates/schedules/edx_ace/courseupdate/email/body.html:71
+msgid "Find out how to choose which model you want"
+msgstr "Hangi modeli istediğinizi nasıl seçeceğinizi öğrenin"
+
+#: openedx/core/djangoapps/schedules/templates/schedules/edx_ace/courseupdate/email/body.html:80
+msgid "Resume your course "
+msgstr "Dersinize devam edin"
+
+#: openedx/core/djangoapps/schedules/templates/schedules/edx_ace/courseupdate/email/body.html:100
+msgid "Your focused attention will pay off in the end!"
+msgstr "Odaklanmanızın karşılığını elbette alacaksınız!"
+
+#: openedx/core/djangoapps/schedules/templates/schedules/edx_ace/courseupdate/email/body.html:102
+#: openedx/core/djangoapps/schedules/templates/schedules/edx_ace/courseupdate/email/body.html:119
+msgid ""
+"With self-paced courses, you learn on your own schedule. It’s a good idea to"
+" spend time with the course each week and check in with your goals often."
+msgstr ""
+"Kendi hızınızda ilerleyen derslerle kendi programınıza göre öğrenirsiniz. "
+"Her hafta derse vakit ayırmak ve hedeflerinizi sık sık kontrol etmek, iyi "
+"bir yöntemdir."
 
 #: openedx/core/djangoapps/schedules/templates/schedules/edx_ace/courseupdate/email/body.txt:4
 #, python-format
@@ -11595,6 +11745,14 @@ msgstr ""
 "anahtar almak veya bir sorunu bildirmek için lütfen "
 "moocsupport@mathworks.com adresi ile iletişim kurun"
 
+#: xmodule/capa_block.py:344
+msgid ""
+"Indicates if the problem was edited using the Markdown editor in the "
+"Authoring MFE."
+msgstr ""
+"Problemin Authoring MFE'deki Markdown düzenleyicisi kullanılarak düzenlenip "
+"düzenlenmediğini gösterir."
+
 #: xmodule/capa_block.py:435
 msgid ""
 "We're sorry, there was an error with processing your request. Please try "
@@ -12596,6 +12754,19 @@ msgstr "Dersinizin dilini tanımlayın."
 msgid "Teams Configuration"
 msgstr "Takımlar Yapılandırması"
 
+#: xmodule/course_block.py:843
+msgid ""
+"Configure team sets, limit team sizes, and set visibility settings using "
+"JSON. See <a target=\"&#95;blank\" "
+"href=\"https://docs.openedx.org/en/latest/educators/references/advanced_features/teams_configuration_options.html>teams"
+" configuration documentation</a> for help and examples."
+msgstr ""
+"JSON kullanarak takım kümelerini yapılandırın, takım boyutlarını sınırlayın "
+"ve görünürlük ayarlarını belirleyin. Yardım ve örnekler için <a "
+"target=\"&#95;blank\" "
+"href=\"https://docs.openedx.org/en/latest/educators/references/advanced_features/teams_configuration_options.html>takım"
+" yapılandırması belgelendirmesine</a> bakın."
+
 #: xmodule/course_block.py:852
 msgid "Enable Proctored Exams"
 msgstr "Gözetimli Sınavları Etkinleştir"
@@ -12760,6 +12931,18 @@ msgstr ""
 "Ders için video paylaşım seçeneklerini belirtin. Bu, üç değerden birine "
 "ayarlanabilir: \"tümü açık\", \"tümü kapalı\" ve \"video başına\". "
 "Varsayılan değer \"video başına\"."
+
+#: xmodule/course_block.py:997
+msgid "Force Flexible Grading for Peer ORAs"
+msgstr "Akran ORA'lar için Esnek Notlandırmayı Zorunlu Hale Getir"
+
+#: xmodule/course_block.py:998
+msgid ""
+"Setting this flag will force on the flexible grading option for all peer-"
+"graded ORAs in this course."
+msgstr ""
+"Bu işlevseti bayrağının ayarlanması, bu dersteki tüm akran notu verilen "
+"ORA'lar için esnek not verme seçeneğini zorunlu kılacaktır."
 
 #: xmodule/course_block.py:1018
 msgid "Course Instructor"
@@ -18110,6 +18293,14 @@ msgstr ""
 "Yöneticiler, dersteki diğer takım elemanlarını ekleyen ve çıkarabilen ders "
 "takım elemanlarıdır."
 
+#: cms/templates/manage_users.html:104
+msgid ""
+"All course team members can access content in Studio, the LMS, and Insights,"
+" and they are automatically enrolled in the course."
+msgstr ""
+"Tüm ders takım üyeleri Studio, LMS ve Insights içindeki içeriğe erişebilir "
+"ve derse otomatik olarak kaydolurlar."
+
 #: cms/templates/manage_users.html:109
 msgid "Transferring Ownership"
 msgstr "Sahiplik Transfer Ediliyor"
@@ -19206,6 +19397,15 @@ msgid "{email} has requested {studio_name} course creator privileges on edge"
 msgstr ""
 "{email} uç noktada {studio_name} ders oluşturma yetkilerini talep etti"
 
+#: cms/templates/emails/course_creator_admin_user_pending.txt:2
+#, python-brace-format
+msgid ""
+"User '{user}' with e-mail {email} has requested {studio_name} course creator"
+" privileges."
+msgstr ""
+"E-posta adresi {email} olan '{user}' adlı kullanıcı {studio_name} ders "
+"oluşturucu ayrıcalıklarını talep etti."
+
 #: cms/templates/emails/course_creator_admin_user_pending.txt:5
 msgid "To grant or deny this request, use the course creator admin table."
 msgstr ""
@@ -20261,6 +20461,13 @@ msgstr "Cevabınızı sıfırlayın"
 #: lms/templates/problem.html:50
 msgid "Show answer"
 msgstr "Yanıtı göster"
+
+#: lms/templates/problem.html:93
+#, python-brace-format
+msgid "You have used {num_used} of {num_total} attempt"
+msgid_plural "You have used {num_used} of {num_total} attempts"
+msgstr[0] "{num_total} deneme hakkınızdan {num_used} tanesini kullandınız"
+msgstr[1] "{num_total} deneme hakkınızdan {num_used} tanesini kullandınız"
 
 #: lms/templates/problem.html:96
 #, python-brace-format

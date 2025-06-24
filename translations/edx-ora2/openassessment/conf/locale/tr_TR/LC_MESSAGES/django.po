@@ -13,7 +13,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: edx-ora2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-05-15 00:38+0000\n"
+"POT-Creation-Date: 2025-06-19 00:35+0000\n"
 "PO-Revision-Date: 2023-05-10 00:48+0000\n"
 "Last-Translator: Ali Işıngör <ali@artistanbul.io>, 2025\n"
 "Language-Team: Turkish (Turkey) (https://app.transifex.com/open-edx/teams/6205/tr_TR/)\n"
@@ -1886,6 +1886,10 @@ msgstr ""
 msgid "Learner Response"
 msgstr "Öğrenci Yanıtı"
 
+#: templates/legacy/staff_area/oa_staff_grade_learners_assessment.html:39
+msgid "The teams's response to the prompt above"
+msgstr "Takımların yukarıdaki prompta yanıtı"
+
 #: templates/legacy/staff_area/oa_staff_grade_learners_assessment.html:41
 #: templates/legacy/staff_area/oa_staff_override_assessment.html:32
 #: templates/legacy/staff_area/oa_student_info.html:57
@@ -2008,6 +2012,24 @@ msgstr ""
 #: templates/legacy/staff_area/oa_student_info.html:119
 msgid "Final Grade Details"
 msgstr "Final Notu Ayrıntıları"
+
+#: templates/legacy/staff_area/oa_student_info.html:139
+#, python-format
+msgid ""
+"\n"
+"                                        %(assessment_label)s - %(points)s point\n"
+"                                    "
+msgid_plural ""
+"\n"
+"                                        %(assessment_label)s - %(points)s points\n"
+"                                    "
+msgstr[0] ""
+"\n"
+"                                         %(assessment_label)s - %(points)s puan\n"
+"                                    "
+msgstr[1] ""
+"\n"
+"                                         %(assessment_label)s - %(points)s puan"
 
 #: templates/legacy/staff_area/oa_student_info.html:154
 msgid "Feedback Recorded"
@@ -2396,6 +2418,12 @@ msgstr "Sıfırlanacak bir gönderim yok."
 #: xblock/openassessmentblock.py:1383
 msgid "Submission reset successfully."
 msgstr "Gönderim başarıyla sıfırlandı."
+
+#: xblock/rubric_reuse_mixin.py:62
+msgid "You must specify a block id from which to copy a rubric."
+msgstr ""
+"Dereceli puanlama anahtarının kopyalanacağı block kimliğini belirtmeniz "
+"gerekir."
 
 #: xblock/rubric_reuse_mixin.py:66
 msgid "Invalid block id."

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: edx-platform\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-06-15 00:36+0000\n"
+"POT-Creation-Date: 2025-06-24 00:33+0000\n"
 "PO-Revision-Date: 2016-05-25 15:41+0000\n"
 "Last-Translator: Muhammad Ayub khan <ayubkhan@edx.org>\n"
 "Language-Team: English (http://www.transifex.com/open-edx/edx-platform/"
@@ -522,7 +522,7 @@ msgid "Course Create"
 msgstr ""
 
 #: apps/course_metadata/choices.py:55
-msgid "Course Partial Update"
+msgid "Partial Update"
 msgstr ""
 
 #: apps/course_metadata/choices.py:56
@@ -530,7 +530,7 @@ msgid "Course Rerun"
 msgstr ""
 
 #: apps/course_metadata/choices.py:57
-msgid "Course Run Partial Update"
+msgid "Course Editor Update"
 msgstr ""
 
 #: apps/course_metadata/choices.py:64

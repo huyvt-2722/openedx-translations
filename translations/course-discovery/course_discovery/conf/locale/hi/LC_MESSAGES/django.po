@@ -14,7 +14,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: edx-platform\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-06-15 00:36+0000\n"
+"POT-Creation-Date: 2025-06-24 00:33+0000\n"
 "PO-Revision-Date: 2023-01-26 15:39+0000\n"
 "Last-Translator: edx_transifex_bot <i18n-working-group+edx-transifex-bot@edx.org>, 2025\n"
 "Language-Team: Hindi (https://app.transifex.com/open-edx/teams/6205/hi/)\n"
@@ -552,17 +552,9 @@ msgstr "दूसरा"
 msgid "Course Create"
 msgstr "पाठ्यक्रम बनाएं"
 
-#: apps/course_metadata/choices.py:55
-msgid "Course Partial Update"
-msgstr "पाठ्यक्रम आंशिक अद्यतन"
-
 #: apps/course_metadata/choices.py:56
 msgid "Course Rerun"
 msgstr "पाठ्यक्रम पुनः चलाना"
-
-#: apps/course_metadata/choices.py:57
-msgid "Course Run Partial Update"
-msgstr "कोर्स रन आंशिक अद्यतन"
 
 #: apps/course_metadata/choices.py:64
 msgid "Pending"
